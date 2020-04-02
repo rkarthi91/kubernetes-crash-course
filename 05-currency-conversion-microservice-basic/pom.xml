@@ -6,7 +6,7 @@
 
 	<groupId>com.in28minutes.microservices</groupId>
 	<artifactId>05-currency-conversion-basic</artifactId>
-	<version>0.0.2-RELEASE</version> <!-- CHANGE -->
+	<version>0.0.1-RELEASE</version> <!-- CHANGE -->
 	<packaging>jar</packaging>
 	<name>currency-conversion</name>
 
@@ -125,18 +125,17 @@
 			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>dockerfile-maven-plugin</artifactId>
-				<version>1.4.6</version>
+				<version>1.4.13</version>
 				<executions>
 					<execution>
 						<id>default</id>
 						<goals>
 							<goal>build</goal>
-							<!-- <goal>push</goal> -->
 						</goals>
 					</execution>
 				</executions>
 				<configuration>
-					<repository>in28min/${project.name}</repository>
+					<repository>rkarthi91/${project.name}</repository>
 					<tag>${project.version}</tag>
 					<skipDockerInfo>true</skipDockerInfo>
 				</configuration>
